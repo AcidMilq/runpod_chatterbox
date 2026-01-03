@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 RUN python -m pip install --no-deps chatterbox-tts
 
 WORKDIR /
+# model KadirErturk/image_info
 COPY requirements.txt /requirements.txt
 RUN pip install -r requirements.txt
 COPY rp_handler.py /
